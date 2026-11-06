@@ -1,0 +1,122 @@
+/**
+ * Wallpaper Picker
+ * Based on adi1090x type-2 style-7
+ * Colors: gruvbox-material
+ **/
+
+configuration {
+    modi:        "dmenu";
+    show-icons:  false;
+}
+
+@import "/home/nathan/.config/rofi/type-2/colors/gruvbox-material.rasi"
+
+window {
+    transparency:     "real";
+    location:         south;
+    anchor:           south;
+    fullscreen:       false;
+    width:            750px;
+    margin:           0px;
+    padding:          0px;
+    border:           1px 1px 0 1px solid;
+    border-radius:    12px 12px 0px 0px;
+    border-color:     @background-alt;
+    background-color: @background;
+    cursor:           "default";
+}
+
+mainbox {
+    spacing:          0px;
+    margin:           0px;
+    padding:          0px;
+    background-color: transparent;
+    children:         [ "inputbar", "listview" ];
+}
+
+inputbar {
+    spacing:          10px;
+    padding:          15px;
+    border-radius:    0px;
+    background-color: @selected;
+    text-color:       @background;
+    children:         [ "prompt", "entry" ];
+}
+
+prompt {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+entry {
+    background-color: inherit;
+    text-color:       inherit;
+    cursor:           text;
+    placeholder: "Search...";
+    placeholder-color: inherit;
+}
+
+listview {
+    columns:          5;
+    lines:            3;
+    cycle:            true;
+    dynamic:          true;
+    scrollbar:        false;
+    layout:           vertical;
+    fixed-height:     true;
+    fixed-columns:    true;
+    spacing:          5px;
+    padding:          10px;
+    background-color: transparent;
+    text-color:       @foreground;
+    cursor:           "default";
+}
+
+scrollbar {
+    handle-width:     5px;
+    handle-color:     @selected;
+    border-radius:    0px;
+    background-color: @background-alt;
+}
+
+element {
+    spacing:          15px;
+    padding:          20px 10px;
+    border-radius:    12px;
+    background-color: transparent;
+    text-color:       @foreground;
+    orientation:      vertical;
+    cursor:           pointer;
+}
+element normal.normal {
+    background-color: @background;
+    text-color:       @foreground;
+}
+element selected.normal {
+    background-color: @background-alt;
+    text-color:       @foreground;
+}
+element-text {
+    background-color: transparent;
+    text-color:       inherit;
+    highlight:        inherit;
+    cursor:           inherit;
+    vertical-align:   0.5;
+    horizontal-align: 0.5;
+}
+
+error-message {
+    padding:          15px;
+    border:           2px solid;
+    border-radius:    12px;
+    border-color:     @selected;
+    background-color: @background;
+    text-color:       @foreground;
+}
+textbox {
+    background-color: @background;
+    text-color:       @foreground;
+    vertical-align:   0.5;
+    horizontal-align: 0.0;
+    highlight:        none;
+}
