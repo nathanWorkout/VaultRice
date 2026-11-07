@@ -1,0 +1,18 @@
+@define-color bg0 C00;
+@define-color bg1 C01;
+@define-color bg2 C02;
+@define-color bg3 C03;
+@define-color bg4 C04;
+
+@define-color fg C05;
+@define-color red C06;
+@define-color orange C07;
+@define-color yellow C08;
+@define-color green C09;
+@define-color aqua C10;
+@define-color blue C11;
+@define-color purple C12;
+
+@define-color grey0 C13;
+@define-color grey1 C14;
+@define-color grey2 C15;

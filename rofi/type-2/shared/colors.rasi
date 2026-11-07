@@ -15,4 +15,4 @@
 
 /* Import color-scheme from `colors` directory */
 
-@import "/home/nathan/.config/themes/catppuccin-mocha/rofi.rasi" /* theme */
+@import "/home/nathan/.config/themes/everforest/rofi.rasi" /* theme */

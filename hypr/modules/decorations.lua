@@ -11,8 +11,8 @@ hl.config({
         border_size = 2,
 
         col = {
-          active_border = { colors = {"rgba(45475aff)"} },
-          inactive_border = "rgba(45475a99)",
+          active_border = { colors = {"rgba(475258ff)"} },
+          inactive_border = "rgba(47525899)",
         },
 
         -- Set to true to enable resizing windows by clicking and dragging on borders and gaps
@@ -32,16 +32,23 @@ hl.config({
 
         shadow = {
             enabled      = true,
-            range        = 20,
-            render_power = 3,
+            range        = 35,
+            render_power = 2,
             color        = 0xee121212,
         },
 
         blur = {
             enabled   = true,
-            size      = 20,
-            passes    = 3,
-            vibrancy  = 0.1696,
+            size      = 4,
+            passes    = 4,
+            vibrancy  = 0.25,      
+            vibrancy_darkness = 0.5,
+            noise            = 0.02,
+            contrast         = 0.9,
+            brightness       = 0.85,
+            new_optimizations = true,
+            xray             = false,
+            popups           = true,
         },
     },
 

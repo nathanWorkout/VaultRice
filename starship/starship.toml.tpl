@@ -15,7 +15,7 @@ $cmd_duration $directory$git_branch
 
 [fill]
 symbol = '-'
-style = 'fg:#7c6f64'
+style = 'fg:FILL_FG'
 
 # Replace the "❯" symbol in the prompt with "➜"
 [character]                            # The name of the module we are configuring is "character"
